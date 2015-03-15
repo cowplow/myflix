@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: myflix_development
+  pool: 5
+  username: myflix
+  password: password1
+  host: localhost
+  port: 5432
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: myflix_test
+  pool: 5
+  username: myflix
+  password: password1
+  host: localhost
+  port: 5432

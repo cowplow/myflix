@@ -1,0 +1,7 @@
+%h2= @category.name
+
+- @category.videos.each do |video|
+  %a{:href => video_path(video)}
+    %img{:src => video.small_cover_url}
+
+
