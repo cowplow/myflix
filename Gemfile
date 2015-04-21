@@ -10,6 +10,7 @@ gem 'uglifier'
 gem 'jquery-rails'
 gem 'pg'
 gem 'therubyracer',  platforms: :ruby
+gem 'bcrypt-ruby', '~> 3.1.2'
 
 group :development do
   gem 'thin'
@@ -25,6 +26,7 @@ end
 
 group :test do
   gem 'database_cleaner', '1.2.0'
+  gem 'shoulda-matchers'
 end
 
 group :production do
