@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:success] = "Your profile has been created!"
-      redirect_to categories_path
+      redirect_to login_path
     else
       render :new
     end
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, :email)
+    params.require(:user).permit(:name, :password, :email)
   end
 
   def set_user

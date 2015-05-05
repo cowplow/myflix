@@ -1,18 +1,21 @@
 %section.sign_in.container
   .row
-    .col-sm-10.com-sm-offset-1
+    .col-sm-10.col-sm-offset-1
       %fieldset
-        = form_tag '/login', class: 'sign-in' do
+        = form_tag sessions_path, class: 'sign-in' do
           %header
             %h1 Sign In
-          = label_tag :username
-          .row
-            .col-sm-4
-              = text_field_tag :username
-          %br
-          = label_tag :password
-          .row
-            .col-sm-4
-              = password_field_tag :password
-          %br
-          = submit_tag 'Login', class: 'btn btn-primary'
+          %fieldset
+            .form-group
+              = label_tag :email, "Email Address"
+              .row
+                .col-sm-4
+                  = email_field_tag :email
+          %fieldset
+            .form-group
+              = label_tag :password
+              .row
+                .col-sm-4
+                  = password_field_tag :password
+          %fieldset.form-group.action
+            = submit_tag 'Sign In', class: 'btn btn-primary'
