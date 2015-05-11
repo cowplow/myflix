@@ -8,14 +8,43 @@
 comedies = Category.create(name: "Comedies")
 dramas = Category.create(name: "Dramas")
 
-Video.create(title: "South Park", description: "Respect my authority", small_cover_url: "/tmp/south_park.jpg", category: comedies)
-Video.create(title: "Futurama", description: "Bender Rodriguez", small_cover_url: "/tmp/futurama.jpg", category: comedies)
-Video.create(title: "Monk", description: "Doesn't like germs", small_cover_url: "tmp/monk.jpg", large_cover_url: "/tmp/monk_large.jpg", category: dramas)
-Video.create(title: "Family Guy", description: "Denizens of Quahoag", small_cover_url: "/tmp/family_guy.jpg", category: comedies)
-Video.create(title: "South Park", description: "Respect my authority", small_cover_url: "/tmp/south_park.jpg", category: comedies)
-Video.create(title: "Futurama", description: "Bender Rodriguez", small_cover_url: "/tmp/futurama.jpg", category: comedies)
-Video.create(title: "Monk", description: "Doesn't like germs", small_cover_url: "/tmp/monk.jpg", large_cover_url: "/tmp/monk_large.jpg", category: dramas)
-Video.create(title: "Family Guy", description: "Denizens of Quahoag", small_cover_url: "/tmp/family_guy.jpg", category: comedies)
-Video.create(title: "South Park", description: "Respect my authority", small_cover_url: "/tmp/south_park.jpg", category: comedies)
+Video.create(title: "South Park",
+             description: "Respect my authority",
+             small_cover_url: "/tmp/south_park.jpg", 
+             category: comedies)
+Video.create(title: "Futurama",
+             description: "Bender Rodriguez",
+             small_cover_url: "/tmp/futurama.jpg", 
+             category: comedies)
+Video.create(title: "Monk",
+             description: "Doesn't like germs",
+             small_cover_url: "tmp/monk.jpg", 
+             large_cover_url: "/tmp/monk_large.jpg", 
+             category: dramas)
+Video.create(title: "Family Guy", 
+             description: "Denizens of Quahoag",
+             small_cover_url: "/tmp/family_guy.jpg", 
+             category: comedies)
+Video.create(title: "South Park",
+             description: "Respect my authority",
+             small_cover_url: "/tmp/south_park.jpg", 
+             category: comedies)
+Video.create(title: "Futurama",
+             description: "Bender Rodriguez",
+             small_cover_url: "/tmp/futurama.jpg", 
+             category: comedies)
+Video.create(title: "Monk",
+             description: "Doesn't like germs",
+             small_cover_url: "tmp/monk.jpg", 
+             large_cover_url: "/tmp/monk_large.jpg", 
+             category: dramas)
+Video.create(title: "Family Guy", 
+             description: "Denizens of Quahoag",
+             small_cover_url: "/tmp/family_guy.jpg", 
+             category: comedies)
+Video.create(title: "South Park",
+             description: "Respect my authority",
+             small_cover_url: "/tmp/south_park.jpg", 
+             category: comedies)
 
 

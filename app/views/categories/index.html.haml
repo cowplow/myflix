@@ -1,11 +1,10 @@
 - @categories.each do |category|
-  %div{:class => 'row'}
+  .row
     %h2
       %strong
       = link_to category.name, category_path(category)
     %br
     - category.recent_videos.each do |video|
-      %a{:href => video_path(video)}
-        %img{:src => video.small_cover_url}
+      = link_to image_tag(video.small_cover_url), video
     %hr
 

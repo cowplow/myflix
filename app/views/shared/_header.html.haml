@@ -1,12 +1,14 @@
 %section#top-header.row
-  %h1.col-md-2
-    = link_to "MyFLiX"
+  .col-md-2
+    %h1
+      = link_to "MyFLiX"
   - if logged_in?
-    %ul.col-md-3.clearfix
-      %li= link_to "Videos"
-      %li= link_to "My Queue"
-      %li= link_to "People"
-    = form_tag search_videos_path, class: 'col-md-5 for-search' do
+    .col-md-3.clearfix
+      %ul
+        %li= link_to "Videos"
+        %li= link_to "My Queue"
+        %li= link_to "People"
+    = form_tag search_videos_path, class: 'col-md-5 for-search', method: :get do
       = text_field_tag :title, params[:title], class: 'search-query', placeholder: "Search for videos"
       = submit_tag 'Search', class: 'btn btn-default', name: nil
     #user_links.pull-right
