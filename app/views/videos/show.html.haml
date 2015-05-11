@@ -1,6 +1,6 @@
-%div{:class => 'row'}
+.row
   %div{:class => 'col-md-7'}
-    %img{:src => '/tmp/monk_large.jpg'}
+    = image_tag @video.large_cover_url
   %div{:class => 'col-md-5'}
     %h2
       %strong= @video.title
