@@ -21,14 +21,19 @@ describe UsersController do
   describe "POST create" do
 
     it "creates the user when the input is valid" do
-      user = Fabricate(:user)
-      post :create, user: {name: user.name, password: user.password, email: user.email}
-      expect(User.last.name).to eq(user.name)
+      post :create, user: Fabricate.attributes_for(:user)
+      expect(User.count).to eq(1)
+    end
+
+    it "redirects to the sign_in_path when input is valid" do
+      post :create, user: { name: "Chris", password: "password", email: "chris@example.com" }
+      expect(response).to redirect_to sign_in_path
     end
 
     it "does not create a user when the input is invalid" do
       post :create, user: {name: Faker::Name.name, password: 'password'}
       expect(User.count).to eq(0)
+      expect(response).to render_template :new
     end
   end
 

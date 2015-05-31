@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       flash[:success] = "Your profile has been created!"
-      redirect_to login_path
+      redirect_to sign_in_path
     else
       render :new
     end

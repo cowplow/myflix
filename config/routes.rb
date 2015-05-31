@@ -14,6 +14,7 @@ Myflix::Application.routes.draw do
 
   resources :videos do
     get 'search', on: :collection
+    resources :reviews, only: [:create]
   end
 
   resources :categories
