@@ -1,9 +1,9 @@
 %article.video
   .container  
     .row
-      %div{:class => 'col-md-7'}
+      .col-md-7
         = image_tag @video.large_cover_url
-      %div{:class => 'col-md-5'}
+      .col-md-5
         %h2
           %strong= @video.title
         %hr

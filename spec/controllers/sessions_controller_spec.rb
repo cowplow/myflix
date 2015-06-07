@@ -26,6 +26,11 @@ describe SessionsController do
       user = Fabricate(:user)
       post :create, email: user.email, password: user.password
       expect(session[:user_id]).to eq(user.id)
+    end
+
+    it "redirects to the home path when the @user is authenticated" do
+      user = Fabricate(:user)
+      post :create, email: user.email, password: user.password
       expect(response).to redirect_to home_path
     end
 

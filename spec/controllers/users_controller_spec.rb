@@ -33,6 +33,10 @@ describe UsersController do
     it "does not create a user when the input is invalid" do
       post :create, user: {name: Faker::Name.name, password: 'password'}
       expect(User.count).to eq(0)
+    end
+
+    it "renders the new template when the input is invalid" do
+      post :create, user: {name: Faker::Name.name, password: 'password'}
       expect(response).to render_template :new
     end
   end
