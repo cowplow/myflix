@@ -18,7 +18,7 @@ Video.create(title: "Futurama",
              category: comedies)
 monk = Video.create(title: "Monk",
              description: "Doesn't like germs",
-             small_cover_url: "tmp/monk.jpg", 
+             small_cover_url: "/tmp/monk.jpg", 
              large_cover_url: "/tmp/monk_large.jpg", 
              category: dramas)
 Video.create(title: "Family Guy", 
@@ -35,7 +35,7 @@ Video.create(title: "Futurama",
              category: comedies)
 Video.create(title: "Monk",
              description: "Doesn't like germs",
-             small_cover_url: "tmp/monk.jpg", 
+             small_cover_url: "/tmp/monk.jpg", 
              large_cover_url: "/tmp/monk_large.jpg", 
              category: dramas)
 Video.create(title: "Family Guy", 
